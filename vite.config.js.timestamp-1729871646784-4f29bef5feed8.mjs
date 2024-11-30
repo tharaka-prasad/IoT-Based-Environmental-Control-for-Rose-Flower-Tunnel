@@ -1,0 +1,18 @@
+// vite.config.js
+import { defineConfig } from "file:///E:/Campus%20Lectuer/Final%20Project/final_project/Green-House/node_modules/vite/dist/node/index.js";
+import laravel from "file:///E:/Campus%20Lectuer/Final%20Project/final_project/Green-House/node_modules/laravel-vite-plugin/dist/index.js";
+import react from "file:///E:/Campus%20Lectuer/Final%20Project/final_project/Green-House/node_modules/@vitejs/plugin-react/dist/index.mjs";
+var vite_config_default = defineConfig({
+  plugins: [
+    laravel({
+      input: "resources/js/app.tsx",
+      ssr: "resources/js/ssr.tsx",
+      refresh: true
+    }),
+    react()
+  ]
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcuanMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJFOlxcXFxDYW1wdXMgTGVjdHVlclxcXFxGaW5hbCBQcm9qZWN0XFxcXGZpbmFsX3Byb2plY3RcXFxcR3JlZW4tSG91c2VcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfZmlsZW5hbWUgPSBcIkU6XFxcXENhbXB1cyBMZWN0dWVyXFxcXEZpbmFsIFByb2plY3RcXFxcZmluYWxfcHJvamVjdFxcXFxHcmVlbi1Ib3VzZVxcXFx2aXRlLmNvbmZpZy5qc1wiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9pbXBvcnRfbWV0YV91cmwgPSBcImZpbGU6Ly8vRTovQ2FtcHVzJTIwTGVjdHVlci9GaW5hbCUyMFByb2plY3QvZmluYWxfcHJvamVjdC9HcmVlbi1Ib3VzZS92aXRlLmNvbmZpZy5qc1wiO2ltcG9ydCB7IGRlZmluZUNvbmZpZyB9IGZyb20gJ3ZpdGUnO1xuaW1wb3J0IGxhcmF2ZWwgZnJvbSAnbGFyYXZlbC12aXRlLXBsdWdpbic7XG5pbXBvcnQgcmVhY3QgZnJvbSAnQHZpdGVqcy9wbHVnaW4tcmVhY3QnO1xuXG5leHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoe1xuICAgIHBsdWdpbnM6IFtcbiAgICAgICAgbGFyYXZlbCh7XG4gICAgICAgICAgICBpbnB1dDogJ3Jlc291cmNlcy9qcy9hcHAudHN4JyxcclxuICAgICAgICAgICAgc3NyOiAncmVzb3VyY2VzL2pzL3Nzci50c3gnLFxuICAgICAgICAgICAgcmVmcmVzaDogdHJ1ZSxcbiAgICAgICAgfSksXG4gICAgICAgIHJlYWN0KCksXG4gICAgXSxcbn0pO1xuIl0sCiAgIm1hcHBpbmdzIjogIjtBQUEyVyxTQUFTLG9CQUFvQjtBQUN4WSxPQUFPLGFBQWE7QUFDcEIsT0FBTyxXQUFXO0FBRWxCLElBQU8sc0JBQVEsYUFBYTtBQUFBLEVBQ3hCLFNBQVM7QUFBQSxJQUNMLFFBQVE7QUFBQSxNQUNKLE9BQU87QUFBQSxNQUNQLEtBQUs7QUFBQSxNQUNMLFNBQVM7QUFBQSxJQUNiLENBQUM7QUFBQSxJQUNELE1BQU07QUFBQSxFQUNWO0FBQ0osQ0FBQzsiLAogICJuYW1lcyI6IFtdCn0K
