@@ -30,7 +30,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/fetch-thingspeak-data', [SensorController::class, 'fetchData']);
     Route::get('/sensor-data/analyze', [SensorController::class, 'analyzeData']);
     Route::get('/sensor/latest', [SensorController::class, 'getLatestData']);
-    Route::resource('tempers-data', TemperController::class);
 
 
 
